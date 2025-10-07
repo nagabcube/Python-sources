@@ -22,7 +22,7 @@ def getFileList(remote_dir):
 	entries  = []
 	
 	try:
-		f = FTP('ftp.ovf.hu', 'vitukih.modellad.ftp', 'Vm20150207')
+		f = FTP('ftp.ovf.hu', 'ftp-user', 'ftp-pwd')
 		f.cwd(remote_dir)
 		f.dir(entries.append)
 	except Exception, msg :
@@ -432,5 +432,6 @@ for cnt in range(int(delta),-1,-1):
 db2dss_apcp('Zala','tp',0)
 
 print '*** Vege ***'
+
 
 	
