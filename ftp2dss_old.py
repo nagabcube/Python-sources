@@ -30,8 +30,8 @@ DSS_ZALA = 'zala.dss'
 # -- ftp kapcsolatok
 
 FTP_HOST = 'ftp.ovf.hu'
-FTP_USER = 'vitukih.modellad.ftp'
-FTP_PASS = 'Vm20150207'
+FTP_USER = 'ftp-user'
+FTP_PASS = 'ftp-pwd'
 
 # -- sqlite jdbc beallitasok
 
@@ -540,3 +540,4 @@ potlas_apcp('Zala')
 cleaning()
 
 print " *** Vege *** "
+
