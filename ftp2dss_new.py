@@ -52,7 +52,7 @@ def getFileList(remote_dir):
     entries  = []
 
     try:
-        f = FTP('ftp.ovf.hu', 'vitukih.modellad.ftp', 'Vm20150207')
+        f = FTP('ftp.ovf.hu', 'ftp-user', 'ftp-pwd')
         f.cwd(remote_dir)
         f.dir(entries.append)
     except Exception, msg :
@@ -479,3 +479,4 @@ db2dss('Zala','tp')
 #	os.remove(f)
 
 print '*** Vege ***'
+
